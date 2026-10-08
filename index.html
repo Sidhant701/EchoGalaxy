@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EchoGalaxy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <h1>EchoGalaxy</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Search</a>
+      <a href="#">Your Library</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <header>
+      <h2>Good Evening</h2>
+      <p>Pick a track and press play.</p>
+    </header>
+
+    <section id="playlist" class="grid"></section>
+  </main>
+
+  <footer class="player">
+    <div class="track-meta">
+      <strong id="now-title">Select a song</strong>
+      <span id="now-artist">—</span>
+    </div>
+    <div class="controls">
+      <button id="play-btn" disabled>Play</button>
+      <input id="progress" type="range" min="0" max="100" value="0" aria-label="Playback progress">
+    </div>
+    <audio id="audio"></audio>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
