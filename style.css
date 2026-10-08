@@ -1,0 +1,151 @@
+:root {
+  --bg: #121212;
+  --panel: #181818;
+  --panel-hover: #282828;
+  --text: #fff;
+  --muted: #b3b3b3;
+  --accent: #1db954;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+.sidebar {
+  grid-row: 1 / 3;
+  padding: 24px;
+  background: #000;
+}
+
+.sidebar h1 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.sidebar nav {
+  display: grid;
+  gap: 12px;
+}
+
+.sidebar a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.sidebar a:hover {
+  color: var(--text);
+}
+
+.content {
+  padding: 24px;
+}
+
+.content header p {
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 14px;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.card:hover,
+.card.active {
+  background: var(--panel-hover);
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.player {
+  grid-column: 2;
+  background: #101010;
+  border-top: 1px solid #222;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.track-meta {
+  display: grid;
+  gap: 4px;
+}
+
+.track-meta span {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: min(500px, 100%);
+}
+
+#play-btn {
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #000;
+  font-weight: 700;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#play-btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+#progress {
+  width: 100%;
+}
+
+@media (max-width: 760px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .sidebar {
+    grid-row: auto;
+  }
+
+  .player {
+    grid-column: 1;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
