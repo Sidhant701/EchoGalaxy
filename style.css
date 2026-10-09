@@ -9,3 +9,7 @@ body{
 .right{
     width: 75vw;
 }
+img{
+    background-color: rgb(67, 67, 67);
+    border-radius: 15px;
+}

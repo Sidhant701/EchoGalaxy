@@ -1,6 +1,7 @@
 /* temporary */
 .border{
     border: 2px solid red;
+    margin: 3px;
 }
 
 .flex{

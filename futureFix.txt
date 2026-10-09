@@ -1,0 +1,3 @@
+Change SVGs to real images instead of links.
+
+Generate a new icon using Spotify icon to avoid same icons.
