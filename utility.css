@@ -15,3 +15,26 @@
 .items-center{
     align-items: center;
 }
+
+/* Not required since we are using a dark theme set in body tag */
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+/* used to change black images to white */
+.invert{
+    filter: invert(1);
+}
+
+.bg-grey{
+    background-color: rgb(67, 67, 67);
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.m-1{
+    margin: 5px;
+}

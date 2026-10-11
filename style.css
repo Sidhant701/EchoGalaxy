@@ -1,3 +1,9 @@
+*{
+    margin: 0; 
+    padding: 0;
+    
+}
+
 body{
     background-color: black;
     color: white;
@@ -9,7 +15,19 @@ body{
 .right{
     width: 75vw;
 }
-img{
+
+.home{
+    padding: 20px;
+}
+
+.home ul li{
+    display: flex;
+    width: 14px;
+    gap: 10px;
+    list-style: none;
+}
+
+/* img{
     background-color: rgb(67, 67, 67);
     border-radius: 15px;
-}
+} */
