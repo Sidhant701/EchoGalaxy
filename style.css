@@ -61,6 +61,26 @@ body{
 .footer a:hover {
     color: white;
 }
+
+.right{
+    margin: 15px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+    /* padding: 20px; */
+    background-color: rgb(34 34 34);
+}
+
+.header > *{
+    padding: 20px;
+}
+
+.header img{
+    filter: invert(1);
+    width: 20px;
+}
 /* img{
     background-color: rgb(67, 67, 67);
     border-radius: 15px;
