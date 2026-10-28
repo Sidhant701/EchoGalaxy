@@ -92,5 +92,10 @@ body{
 }
 
 .spotifyPlaylists .card{
-    margin: 250px;
+    width: 200px;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
 }
