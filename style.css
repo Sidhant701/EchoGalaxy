@@ -48,7 +48,7 @@ body{
     font-size: 10px;
     gap: 13px;
     list-style: none;
-    text-wrap: nowrap;
+    flex-wrap: wrap;
     position: absolute;
     bottom: 5px;
 }
@@ -85,6 +85,22 @@ body{
     background-color: rgb(67, 67, 67);
     border-radius: 15px;
 } */
+.signUpbtn{
+    background-color: #1fdf64;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.logInbtn{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
 
 
 .spotifyPlaylists{
@@ -96,6 +112,8 @@ body{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 50vh;
 }   
 
 .card{
