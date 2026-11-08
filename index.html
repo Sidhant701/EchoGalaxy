@@ -1,176 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EchoGalaxy</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EchoGalaxy</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="utility.css">
+    </head>
 
-<body>
-    <!-- <img src="logo.svg" alt="Logo"> [get a custom Logo] -->
-    <div class="container flex">
-        <div class="left">
-            <div class="home bg-grey rounded m-1 p-1">
-                <div class="logo"><img src="logo.svg" class="invert" alt="Logo"></div>
-                <ul>
-                    <li><img src="home.svg" class="invert" alt="home">Home</li>
-                    <li><img src="search.svg" class="invert" alt="search">Search</li>
-                </ul>
+    <body>
+        <!-- <img src="logo.svg" alt="Logo"> [get a custom Logo] -->
+        <div class="container flex">
+            <div class="left">
+                <div class="home bg-grey rounded m-1 p-1">
+                    <div class="logo"><img src="logo.svg" class="invert" alt="Logo"></div>
+                    <ul>
+                        <li><img src="home.svg" class="invert" alt="home">Home</li>
+                        <li><img src="search.svg" class="invert" alt="search">Search</li>
+                    </ul>
+                </div>
+
+                <div class="library bg-grey rounded m-1 p-1">
+                    <div class="heading">
+                        <!-- Add SVG later if needed -->
+                        <h2>Your Library</h2>
+                    </div>
+
+                    <!-- Make Footer a new segment below Library afterwards for better structure -->
+                    <!-- <div class="footer bg-grey rounded m-1 p-1"> -->
+                    <div class="footer">
+                        <li><a href="https://www.spotify.com/in-en/legal/">Legal</a></li>
+                        <li><a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety &amp; Privacy Center</a></li>
+                        <li><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></li>
+                        <li><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></li>
+                        <li><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></li>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="library bg-grey rounded m-1 p-1">
-                <div class="heading">
-                    <!-- Add SVG later if needed -->
-                    <h2>Your Library</h2>
+
+            <div class="right bg-grey rounded p-1">
+                <div class="header">
+                    <div class="nav">
+                        <img src="leftArrow.svg" alt="left">
+                        <img src="rightArrow.svg" alt="right">
+                    </div>
+                    <div class="buttons">
+                        <button class="signUpbtn">Sign Up</button>
+                        <button class="logInbtn">Log In</button>
+                    </div>
                 </div>
-                
-                <!-- Make Footer a new segment below Library afterwards for better structure -->
-                <!-- <div class="footer bg-grey rounded m-1 p-1"> -->
-                <div class="footer">
-                    <li><a href="https://www.spotify.com/in-en/legal/">Legal</a></li>
-                    <li><a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety &amp; Privacy Center</a></li>
-                    <li><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></li>
-                    <li><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></li>
-                    <li><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></li>
-                    <li><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></li>
+
+                <div class="spotifyPlaylists">
+                    <h1>Spotify Playlists</h1>
+                    <div class="cardContainer">
+                        <div class="card">
+                            <!-- use your own images(to prevent future problems and copyright issues) -->
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                alt="Happy Hits pic">
+                            <div class="play">
+                                <img src="playButton.svg" alt="Play">
+                            </div>
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <!-- use your own images(to prevent future problems and copyright issues) -->
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                alt="Happy Hits pic">
+                            <div class="play">
+                                <img src="playButton.svg" alt="Play">
+                            </div>
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <!-- use your own images(to prevent future problems and copyright issues) -->
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                alt="Happy Hits pic">
+                            <div class="play">
+                                <img src="playButton.svg" alt="Play">
+                            </div>
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <!-- use your own images(to prevent future problems and copyright issues) -->
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                alt="Happy Hits pic">
+                            <div class="play">
+                                <img src="playButton.svg" alt="Play">
+                            </div>
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <!-- use your own images(to prevent future problems and copyright issues) -->
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                alt="Happy Hits pic">
+                            <div class="play">
+                                <img src="playButton.svg" alt="Play">
+                            </div>
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <!-- use your own images(to prevent future problems and copyright issues) -->
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                alt="Happy Hits pic">
+                            <div class="play">
+                                <img src="playButton.svg" alt="Play">
+                            </div>
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <!-- use your own images(to prevent future problems and copyright issues) -->
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                alt="Happy Hits pic">
+                            <div class="play">
+                                <img src="playButton.svg" alt="Play">
+                            </div>
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <!-- use your own images(to prevent future problems and copyright issues) -->
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                alt="Happy Hits pic">
+                            <div class="play">
+                                <img src="playButton.svg" alt="Play">
+                            </div>
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <!-- use your own images(to prevent future problems and copyright issues) -->
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                alt="Happy Hits pic">
+                            <div class="play">
+                                <img src="playButton.svg" alt="Play">
+                            </div>
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <!-- use your own images(to prevent future problems and copyright issues) -->
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                alt="Happy Hits pic">
+                            <div class="play">
+                                <img src="playButton.svg" alt="Play">
+                            </div>
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <!-- use your own images(to prevent future problems and copyright issues) -->
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                alt="Happy Hits pic">
+                            <div class="play">
+                                <img src="playButton.svg" alt="Play">
+                            </div>
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                        <div class="card">
+                            <!-- use your own images(to prevent future problems and copyright issues) -->
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                alt="Happy Hits pic">
+                            <div class="play">
+                                <img src="playButton.svg" alt="Play">
+                            </div>
+                            <h2>Happy Hits</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
 
-
-        <div class="right bg-grey rounded p-1">
-            <div class="header">
-                <div class="nav">
-                    <img src="leftArrow.svg" alt="left">
-                    <img src="rightArrow.svg" alt="right">
-                </div>
-                <div class="buttons">
-                    <button class="signUpbtn">Sign Up</button>
-                    <button class="logInbtn">Log In</button>
-                </div>
-            </div>
-
-            <div class="spotifyPlaylists">
-                <h1>Spotify Playlists</h1>
-                <div class="cardContainer">
-                    <div class="card">
-                        <!-- use your own images(to prevent future problems and copyright issues) -->
-                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="Happy Hits pic">
-                        <div class="play">
-                            <img src="playButton.svg" alt="Play">
-                        </div>
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                    <div class="card">
-                        <!-- use your own images(to prevent future problems and copyright issues) -->
-                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="Happy Hits pic">
-                        <div class="play">
-                            <img src="playButton.svg" alt="Play">
-                        </div>
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                    <div class="card">
-                        <!-- use your own images(to prevent future problems and copyright issues) -->
-                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="Happy Hits pic">
-                        <div class="play">
-                            <img src="playButton.svg" alt="Play">
-                        </div>
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                    <div class="card">
-                        <!-- use your own images(to prevent future problems and copyright issues) -->
-                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="Happy Hits pic">
-                        <div class="play">
-                            <img src="playButton.svg" alt="Play">
-                        </div>
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                    <div class="card">
-                        <!-- use your own images(to prevent future problems and copyright issues) -->
-                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="Happy Hits pic">
-                        <div class="play">
-                            <img src="playButton.svg" alt="Play">
-                        </div>
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                    <div class="card">
-                        <!-- use your own images(to prevent future problems and copyright issues) -->
-                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="Happy Hits pic">
-                        <div class="play">
-                            <img src="playButton.svg" alt="Play">
-                        </div>
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                    <div class="card">
-                        <!-- use your own images(to prevent future problems and copyright issues) -->
-                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="Happy Hits pic">
-                        <div class="play">
-                            <img src="playButton.svg" alt="Play">
-                        </div>
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                    <div class="card">
-                        <!-- use your own images(to prevent future problems and copyright issues) -->
-                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="Happy Hits pic">
-                        <div class="play">
-                            <img src="playButton.svg" alt="Play">
-                        </div>
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                    <div class="card">
-                        <!-- use your own images(to prevent future problems and copyright issues) -->
-                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="Happy Hits pic">
-                        <div class="play">
-                            <img src="playButton.svg" alt="Play">
-                        </div>
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                    <div class="card">
-                        <!-- use your own images(to prevent future problems and copyright issues) -->
-                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="Happy Hits pic">
-                        <div class="play">
-                            <img src="playButton.svg" alt="Play">
-                        </div>
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                    <div class="card">
-                        <!-- use your own images(to prevent future problems and copyright issues) -->
-                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="Happy Hits pic">
-                        <div class="play">
-                            <img src="playButton.svg" alt="Play">
-                        </div>
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                    <div class="card">
-                        <!-- use your own images(to prevent future problems and copyright issues) -->
-                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="Happy Hits pic">
-                        <div class="play">
-                            <img src="playButton.svg" alt="Play">
-                        </div>
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 
 </html>
