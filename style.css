@@ -64,6 +64,7 @@ body{
 
 .right{
     margin: 15px;
+    position: relative;
 }
 
 .header {
@@ -94,6 +95,7 @@ body{
 }
 
 .signUpbtn{
+    width: 90px;
     background-color: #1fdf64;
     color: black;
     border: none;
@@ -109,6 +111,7 @@ body{
 }
 
 .logInbtn{
+    width: 90px;
     background-color: transparent;
     color: white;
     border: 1px solid white;
@@ -124,7 +127,7 @@ body{
 }
 
 
-.spotifyPlaylists{
+.SpotifyPlaylists{
     padding: 16px;
 }
 
@@ -153,7 +156,7 @@ body{
     object-fit: contain;
 }
 
-.play {
+.playlistPlay {
 	width: 28px;
 	height: 28px;
 	padding: 4px;
@@ -164,14 +167,37 @@ body{
 	right: 20px;
 	display: none;
 }
-.card:hover > .play{
+.card:hover > .playlistPlay {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
-.play img{
+.playlistPlay img{
     width: 80%;
     position: relative;
     left: 3%;
+}
+
+.playbar{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(139, 193, 139);
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.playbar img{
+    width: 20px;
+    /* filter: invert(1); */
+}
+
+.playbar img:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
