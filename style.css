@@ -36,11 +36,20 @@ body{
 
 .heading{
     display: flex;
+    padding-bottom: 10px;
     gap: 10px;
     width: 100%;
     /* padding-top: 14px; */
     font-weight: bold;
     font-size: 15px;
+}
+
+.songList{
+    padding: 0px 32px;
+}
+
+.songList li{
+    list-style-type: decimal;
 }
 
 .footer{
@@ -184,7 +193,7 @@ body{
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: rgb(139, 193, 139);
+    background-color: rgb(31, 223, 100);
     width: 100%;
     padding: 12px;
     display: flex;

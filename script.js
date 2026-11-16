@@ -14,7 +14,7 @@ async function getSongs() {
     for (let i = 0; i < as.length; i++) {
         const element = as[i];
         if (element.href.endsWith(".mp3")) {
-            songs.push(element.href);
+            songs.push(element.href.split("/").pop());
         }
     }
     return songs;
@@ -24,6 +24,14 @@ async function main() {
     // display list of songs
     let songs = await getSongs();
     console.log(songs);
+
+    let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0]; 
+    for (const song of songs) {
+        let songName = song.replaceAll("%20", " ");
+        songName = songName.substring(0, songName.length - 4); // remove .mp3 extension
+        songUL.innerHTML += `<li>${songName}</li>`; 
+    }
+
 
     // Play songs
     var audio = new Audio(songs[0]);
