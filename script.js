@@ -1,7 +1,7 @@
 console.log("Let\'s write JavaScript codes.");
 
 async function getSongs() {
-    let a = await fetch("http://127.0.0.1:5500/songs/");
+    let a = await fetch("http://127.0.0.1:5500/Songs/");
     let response = await a.text();
     // console.log(response);
     
@@ -34,7 +34,7 @@ async function main() {
 
 
     // Play songs
-    var audio = new Audio(songs[0]);
+    var audio = new Audio("Songs/" + songs[0]);
 
     audio.addEventListener("loadeddata", () => {
         let duration = audio.duration; // duration in seconds
