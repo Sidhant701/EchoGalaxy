@@ -14,7 +14,7 @@ async function getSongs() {
     for (let i = 0; i < as.length; i++) {
         const element = as[i];
         if (element.href.endsWith(".mp3")) {
-            songs.push(element.href.split("/").pop());
+            songs.push(element.href.split("/Songs/").pop()); // get the right local folder name or it won't work
         }
     }
     return songs;
