@@ -44,20 +44,34 @@ body{
     font-size: 15px;
 }
 
-.songList{
-    padding: 0px 32px;
+.songList ul{
+    height: 55vh;
+    overflow: auto;
+    padding: 0px 12px;
+    margin: 12px 0px;
 }
 
 .songList li{
     list-style-type: decimal;
     display: flex;
-    gap: 34px;
-    padding: 10px 0px;
+    /* justify-content: space-between; */
+    gap: 12px;
     cursor: pointer;
     border: 1px solid white;
-    margin: 12px;
+    margin: 12px 0px;
     padding: 8px;
-    border-radius: 10px;
+    border-radius: 5px;
+}
+
+.songList .info{
+    width: 100%;
+}
+
+.playButtonLib{
+    opacity: 0;
+}
+.songList li:hover > .playButtonLib{
+    opacity: 1;
 }
 
 .footer{

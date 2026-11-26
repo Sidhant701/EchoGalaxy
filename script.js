@@ -29,7 +29,14 @@ async function main() {
     for (const song of songs) {
         let songName = song.replaceAll("%20", " ");
         songName = songName.substring(0, songName.length - 4); // remove .mp3 extension
-        songUL.innerHTML += `<li>${songName}</li>`; 
+        songUL.innerHTML += `<li> 
+                                <img class="invert" src="music.svg" alt="music icon" width="20px">
+                                <div class="info">
+                                    <h3>${songName}</h3>
+                                    <p>Sid</p>
+                                </div>
+                                <img class="playButtonLib invert" src="playButton.svg" alt="Play Now" width="20px">
+                            </li>`; 
     }
 
 
