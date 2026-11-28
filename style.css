@@ -211,14 +211,14 @@ body{
     left: 3%;
 }
 
-.playbar{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: rgb(31, 223, 100);
-    /* background-color: rgb(0, 0, 0); */
-    /* border: 1px solid rgb(31, 223, 100); */
-    width: 100%;
+.playbar{ /*has a problem due to padding p-1 and somehow it goes beyond the right container*/
+    /*removing padding p-1 from right and making position of playbar sticky might fix it all*/
+    position: fixed;
+    bottom: 30px;
+    /* background-color: rgb(31, 223, 100); */
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(31, 223, 100);
+    width: 70vw;
     padding: 12px;
     display: flex;
     justify-content: center;
